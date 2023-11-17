@@ -10,5 +10,5 @@ while n != 1:
 
     n += 1
 r = list(map(int,a))
-z = list(filter(lambda x: ((x%20==0) or (x%30==0)),r))
+z = list(filter(lambda x: ((x%13==0) or (x%19==0)),r))
 print(z)
