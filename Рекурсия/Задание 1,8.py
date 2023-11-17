@@ -20,5 +20,6 @@ while n != 1:
             a.append(a0)
 
     n += 1
-print(a)
-print(maximum(a))
+r = list(map(int,a))
+print(r)
+print(maximum(r))
