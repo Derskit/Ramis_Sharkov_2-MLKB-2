@@ -21,5 +21,17 @@ while n != 1:
     n += 1
 r1 = list(map(int,a))
 r2 = list(map(int,b))
+z1 = len(r1)
+z2 = len(r2)
+if z1 > z2:
+    z = z1 - z2
+    while z != 0:
+        r2.append(0)
+        z += -1
+elif z2 > z1:
+    z = z2-z1
+    while z != 0:
+        r1.append(0)
+        z += -1
 c = list(map(lambda x, y: x + y,r1,r2))
 print(c)
