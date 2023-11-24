@@ -74,6 +74,7 @@ def main():
             print(f'Поздравляем! Игрок {player} победил')
             break
         elif ' ' not in board:
+            num = number(board,num)
             draw_board(board,num)
             print('Ничья')
             break
