@@ -79,4 +79,11 @@ def main():
             print('Ничья')
             break
         turn += 1
-main()
+n = 0
+while n != 1:
+     z = input(f'Начать играть? (1 - да, 2 - нет)')
+     if z =='1' or z == '2':
+         if z == '1':
+             main()
+         else:
+             n += 1
